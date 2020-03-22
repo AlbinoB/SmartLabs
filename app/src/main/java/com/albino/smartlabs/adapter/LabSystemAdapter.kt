@@ -97,6 +97,7 @@ class LabSystemAdapter (val contextParam : Context, var listOfSystems:ArrayList<
                 alterDialog.setMessage("Do you want to turn on "+holder.computerCode.text.toString()+"?")
                 alterDialog.setPositiveButton("Turn on"){text,listener->
                     system.currentUser="Lab Asst Name"
+                    system.currentUserId="1012180001"
                     system.currentUserCourse="Lab dept"
                     system.systemStatus="1"
                     listOfActiveSystems.add(system)
@@ -338,6 +339,7 @@ class LabSystemAdapter (val contextParam : Context, var listOfSystems:ArrayList<
 
         }
 
+        
 
 
     }

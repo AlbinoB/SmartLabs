@@ -50,7 +50,7 @@ class AllocateSystemActivity : AppCompatActivity() {
 
                         println(erpNo.text.toString()+"sssss")
 
-                        val url = "http://192.168.0.15/hackathon/v1/allocate_system_to_user.php?userId="+erpNo.text
+                        val url = "http://"+resources.getString(R.string.ip_address)+"/hackathon/v1/allocate_system_to_user.php?userId="+erpNo.text
 
                         val jsonObjectRequest = object : JsonObjectRequest(
                             Request.Method.GET,
@@ -103,7 +103,7 @@ class AllocateSystemActivity : AppCompatActivity() {
 
                     }
 
-                    
+
                 }
 
             }
